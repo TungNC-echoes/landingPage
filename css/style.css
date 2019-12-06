@@ -33,7 +33,7 @@ header {
     clip-path: ellipse(79% 55% at 50% 32%);
 }
 
-.text-box {
+.header__text-box {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -41,11 +41,11 @@ header {
     text-align: center;
 }
 
-.logo {
+.header__logo {
     height: 70px;
 }
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     top: 30px;
     left: 30px;
@@ -57,7 +57,7 @@ header {
     margin-bottom: 60px;
 }
 
-.heading-primary__main {
+.heading-primary--main {
     display: block;
     font-size: 6.2rem;
     font-weight: 400;
@@ -65,7 +65,7 @@ header {
     animation: moveInLeft 1s ease-out;
 }
 
-.heading-primary__sub {
+.heading-primary--sub {
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -85,7 +85,7 @@ header {
     position: relative;
 }
 
-.btn-white {
+.btn--white {
     color: #777777;
     background-color: #fff;
 }
@@ -114,7 +114,7 @@ header {
     z-index: -1;
     transition: all .4s;
 }
-.btn-white:after {
+.btn--white:after {
     background-color: #fff;
 }
 .btn:hover::after {
@@ -122,7 +122,7 @@ header {
     opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveInBottom 0.5s ease-out .75s;
     animation-fill-mode: backwards;
 }

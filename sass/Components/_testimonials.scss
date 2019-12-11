@@ -6,7 +6,7 @@
   box-shadow: 0 3rem 6rem rgba($color-black, .15a);
   font-size: $default-font-size;
   border-radius: 100rem;
-  background-color: rgba($color-white, .1);
+  background-color: rgba($color-white, 1);
   padding-left: 9rem;
   &__shape {
     width: 15rem;
@@ -25,6 +25,7 @@
   &__img {
     width: 100%;
     transform: translateY(-2rem);
+    transition: all .3s;
   }
 
   &__caption {
@@ -37,5 +38,17 @@
     font-size: 1.7rem;
     text-align: center;
     opacity: 0;
+    transition: all .5s;
+  }
+
+  &:hover &__caption {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+
+  }
+
+  &:hover &__img {
+    filter: blur(.5rem) brightness(70%);
+    transform: scale(1.05);
   }
 }
